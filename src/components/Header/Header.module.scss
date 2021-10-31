@@ -1,0 +1,30 @@
+.nav {
+  background-color: hsl(207, 4%, 46%);
+  width: 100vw;
+  padding: 3rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  font-size: 2rem;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+.header::before {
+  background-color: #0dccf2;
+  padding: 1.5rem;
+  width: 20px;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
