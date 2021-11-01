@@ -16,7 +16,7 @@ function App() {
       .then((res) => setData(res.data))
       .catch((error) => console.log(error));
   }, []);
-  console.log(data[0]);
+
   return (
     <>
       <Header />
