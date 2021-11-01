@@ -3,6 +3,7 @@ import "./App.css";
 import Search from "./components/Search/Search";
 import Header from "./components/Header/Header";
 import axios from "axios";
+import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 
 function App() {
   const [data, setData]: any = useState([]);
@@ -21,6 +22,7 @@ function App() {
     <>
       <Header />
       <Search data={data} />
+      <BackToTopButton />
     </>
   );
 }

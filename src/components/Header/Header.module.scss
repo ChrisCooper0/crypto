@@ -17,16 +17,20 @@
 }
 
 .header::before {
-  background-color: #2e91a5;
+  background: linear-gradient(
+    to right,
+    rgba(13, 204, 242, 1),
+    rgba(13, 204, 242, 0.2)
+  );
   padding: 1.5rem;
   width: 20px;
   border-radius: 50%;
   content: "";
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: -12px;
+  top: -15px;
   left: -15px;
   z-index: -1;
 }

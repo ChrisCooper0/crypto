@@ -5,13 +5,14 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Inconsolata", monospace;
 }
 
 html,
 body {
   background-color: #181a1b;
-  color: rgb(221, 221, 221);
+  color: whitesmoke;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=index.css.map */
