@@ -1,3 +1,20 @@
+.list_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 0 0.5rem 0;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.33);
+  width: 70%;
+  margin: 20px auto;
+}
+
 .list_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,10 +22,21 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 2rem 0 0 0;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.33);
+  width: 70%;
+  margin: 20px auto;
+}
+
+.low {
+  color: #bd4848;
+}
+
+.high {
+  color: #52b372;
 }
 /*# sourceMappingURL=List.module.css.map */

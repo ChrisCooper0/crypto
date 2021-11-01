@@ -5,10 +5,19 @@ import Sparkline from "react-sparkline-svg";
 const List = ({ data }: any) => {
   return (
     <>
+      <div className={styles.list_header}>
+        <p>Logo</p>
+        <p>Coin</p>
+        <p>Symbol</p>
+        <p>Current Price</p>
+        <p>24 Hour Low</p>
+        <p>24 Hour High</p>
+        <p>7 Day Sparkline</p>
+      </div>
       {data.map((el: any) => (
         <div key={el.id} className={styles.list_wrapper}>
+          <img src={el.image} width={"20px"} alt={el.name} />
           <p>{el.name}</p>
-          <img src={el.image} width={"25px"} alt={el.name} />
           <p>{el.symbol}</p>
           <p>
             £
@@ -17,6 +26,21 @@ const List = ({ data }: any) => {
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
           </p>
+          <p className={styles.low}>
+            £
+            {el.low_24h
+              .toFixed(2)
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+          </p>
+          <p className={styles.high}>
+            £
+            {el.high_24h
+              .toFixed(2)
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+          </p>
+
           <Sparkline
             values={el.sparkline_in_7d.price}
             height={"50px"}

@@ -1,21 +1,23 @@
 .nav {
-  background-color: #71767a;
+  background-color: rgba(24, 26, 27, 0.9);
   width: 100vw;
   padding: 3rem;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 98;
 }
 
 .header {
   font-size: 2rem;
   position: fixed;
-  top: 25px;
-  left: 25px;
+  top: 35px;
+  left: 35px;
+  z-index: 99;
 }
 
 .header::before {
-  background-color: #0dccf2;
+  background-color: #2e91a5;
   padding: 1.5rem;
   width: 20px;
   border-radius: 50%;
@@ -24,8 +26,8 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -12px;
+  left: -15px;
   z-index: -1;
 }
 /*# sourceMappingURL=Header.module.css.map */

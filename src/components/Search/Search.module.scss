@@ -2,5 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 8rem;
+}
+
+.input {
+  border: 1px solid rgba(245, 245, 245, 0.4);
+  border-radius: 4px;
+  color: whitesmoke;
+  label {
+    color: whitesmoke;
+  }
+  input {
+    color: whitesmoke;
+  }
+  svg {
+    color: whitesmoke;
+  }
 }

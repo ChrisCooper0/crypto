@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Search from "./components/Search/Search";
 import Header from "./components/Header/Header";
-import List from "./components/List/List";
 import axios from "axios";
 
 function App() {
@@ -17,13 +16,11 @@ function App() {
       .then((res) => setData(res.data))
       .catch((error) => console.log(error));
   }, []);
-
-  console.log(data);
+  console.log(data[0]);
   return (
     <>
       <Header />
       <Search data={data} />
-      <List data={data} />
     </>
   );
 }
