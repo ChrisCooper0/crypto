@@ -5,15 +5,15 @@ import styles from "./Search.module.css";
 import List from "../List/List";
 
 const Search = ({ data }: any) => {
-  const [filteredCoin, setFilteredCoins] = useState();
+  const [search, setSearch] = useState("");
 
   const coins = data.map((el: any) => el.name);
 
-  const handleChange = (event: any, value: React.SetStateAction<any>) =>
-    setFilteredCoins(value);
+  const handleInputChange = (event: any, value: React.SetStateAction<any>) =>
+    setSearch(value);
 
-  const filteredData = data.filter((coin: { name: undefined[] }) =>
-    coin.name.includes(filteredCoin)
+  const filteredData = data.filter((coin: any) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -21,7 +21,7 @@ const Search = ({ data }: any) => {
       <div className={styles.search}>
         <Autocomplete
           disablePortal
-          onChange={handleChange}
+          onInputChange={handleInputChange}
           options={coins}
           sx={{ width: 200 }}
           size="small"
