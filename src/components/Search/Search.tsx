@@ -26,9 +26,12 @@ const Search = ({ data }: any) => {
           sx={{ width: 200 }}
           size="small"
           className={styles.input}
-          renderInput={(params) => <TextField {...params} label="Search" />}
+          renderInput={(params) => (
+            <TextField {...params} variant="filled" label="Search" />
+          )}
         />
       </div>
+
       <List data={filteredData} />
     </>
   );
