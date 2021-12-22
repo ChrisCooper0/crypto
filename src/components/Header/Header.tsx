@@ -7,7 +7,7 @@ const Header = (props: Props) => {
   return (
     <>
       <nav className={styles.nav}></nav>
-      <header className={styles.header}>Compound</header>
+      <header className={styles.header}>Coins</header>
     </>
   );
 };

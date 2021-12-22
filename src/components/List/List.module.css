@@ -1,46 +1,39 @@
-.list_header {
+.table {
+  margin: 4rem auto;
+  width: 80%;
+}
+
+.table .header {
+  font-size: 1.05rem;
+  padding-bottom: 1rem;
+}
+
+.table td {
+  text-align: center;
+}
+
+.table .sparkline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 1rem;
-  padding: 2rem 0 0.5rem 0;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.33);
-  width: 70%;
-  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.list_header p {
-  font-size: 1.1rem;
+.table .current {
+  text-align: right;
 }
 
-.list_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 1rem;
-  padding: 2rem 0 0 0;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.33);
-  width: 70%;
-  margin: 20px auto;
+.table .low {
+  text-align: right;
+  color: #ff6173;
 }
 
-.low {
-  color: #bd4848;
-}
-
-.high {
+.table .high {
+  text-align: right;
   color: #52b372;
 }
 /*# sourceMappingURL=List.module.css.map */
