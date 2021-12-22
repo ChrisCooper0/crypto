@@ -2,9 +2,14 @@
   margin: 4rem auto;
   width: 80%;
 
-  .header {
-    font-size: 1.05rem;
-    padding-bottom: 1rem;
+  .centerAlign {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .rightAlign {
+    text-align: right;
+    font-size: 1.1rem;
   }
 
   td {

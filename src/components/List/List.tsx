@@ -4,22 +4,48 @@ import Sparkline from "react-sparkline-svg";
 
 const List = ({ data }: any) => {
   const headers = [
-    "Logo",
-    "Coin",
-    "Symbol",
-    "Current Price",
-    "24 Hour Low",
-    "24 Hour High",
-    "7 Day Sparkline",
+    {
+      name: "Logo",
+      centerAlign: true,
+    },
+    {
+      name: "Coin",
+      centerAlign: true,
+    },
+    {
+      name: "Symbol",
+      centerAlign: true,
+    },
+    {
+      name: "Current Price",
+      centerAlign: false,
+    },
+    {
+      name: "24h Low",
+      centerAlign: false,
+    },
+    {
+      name: "24h High",
+      centerAlign: false,
+    },
+    {
+      name: "7d Sparkline",
+      centerAlign: true,
+    },
   ];
 
   return (
     <table className={styles.table}>
       <tbody>
         <tr>
-          {headers.map((header: string) => (
-            <th key={header} className={styles.header}>
-              {header}
+          {headers.map(({ name, centerAlign }) => (
+            <th
+              key={name}
+              className={`${
+                centerAlign ? styles.centerAlign : styles.rightAlign
+              }`}
+            >
+              {name}
             </th>
           ))}
         </tr>

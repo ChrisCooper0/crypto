@@ -3,9 +3,14 @@
   width: 80%;
 }
 
-.table .header {
-  font-size: 1.05rem;
-  padding-bottom: 1rem;
+.table .centerAlign {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.table .rightAlign {
+  text-align: right;
+  font-size: 1.1rem;
 }
 
 .table td {
