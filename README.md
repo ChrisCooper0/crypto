@@ -3,9 +3,14 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ded21375-a78e-4664-8699-dd3d908ca5ce/deploy-status)](https://app.netlify.com/sites/react-coingeko/deploys)
 
-### A React app displaying CoinGeko crypto API data, styled using MaterialUI and Scss modules
 
-
+ ### A React app displaying data from the CoinGeko crypto API.
+ #### Features include:
+   - Filterable search
+   - MaterialUI (MUI) component library
+   - Scss modules
+   - API error handling
+   - Written in TypeScript
 ___
 
 
