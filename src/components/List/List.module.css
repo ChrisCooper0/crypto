@@ -13,6 +13,12 @@
   font-size: 1.1rem;
 }
 
+.table th {
+  height: 25px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(13, 204, 242, 0.4);
+}
+
 .table td {
   text-align: center;
 }
@@ -26,6 +32,7 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding-top: 0.5rem;
 }
 
 .table .current {

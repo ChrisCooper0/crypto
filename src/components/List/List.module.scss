@@ -12,6 +12,12 @@
     font-size: 1.1rem;
   }
 
+  th {
+    height: 25px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(13, 204, 242, 0.4);
+  }
+
   td {
     text-align: center;
   }
@@ -20,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-top: 0.5rem;
   }
 
   .current {
