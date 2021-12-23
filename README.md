@@ -1,3 +1,14 @@
+
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ded21375-a78e-4664-8699-dd3d908ca5ce/deploy-status)](https://app.netlify.com/sites/react-coingeko/deploys)
+
+### A React app displaying CoinGeko crypto API data, styled using MaterialUI and Scss modules
+
+
+___
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
