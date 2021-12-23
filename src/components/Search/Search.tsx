@@ -4,7 +4,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import styles from "./Search.module.css";
 import List from "../List/List";
 
-const Search = ({ data }: any) => {
+const Search = ({ data, error }: any) => {
   const [search, setSearch] = useState("");
 
   const coins = data.map((el: any) => el.name);
@@ -15,6 +15,15 @@ const Search = ({ data }: any) => {
   const filteredData = data.filter((coin: any) =>
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
+
+  if (error) {
+    return (
+      <div className={styles.error}>
+        <p>Error: {error.message}</p>
+        <p>Please try again.</p>
+      </div>
+    );
+  }
 
   return (
     <>
